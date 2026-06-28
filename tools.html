@@ -367,48 +367,16 @@
             <!-- Filter Pills -->
             <div class="flex flex-wrap justify-center gap-2" id="filter-container">
                 <button class="filter-pill active px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="all">All</button>
-                <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="writing">Writing</button>
                 <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="coding">Coding</button>
                 <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="image">Image</button>
-                <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="analysis">Analysis</button>
                 <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="business">Business</button>
-                <button class="filter-pill px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider" data-category="audio">Audio</button>
             </div>
         </section>
 
         <!-- Dynamic AI Grid -->
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" id="ai-grid">
-            
-            <!-- Card 1: Pixel Chat -->
-            <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="writing" data-name="Pixel Chat" data-description="Advanced conversational AI for deep technical discussions, logic validation, and rapid conceptualization.">
-                <!-- Status Badge -->
-                <div class="absolute top-4 right-4">
-                    <span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20">Live</span>
-                </div>
-                <div>
-                    <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">chat</span>
-                    </div>
-                    <!-- Details -->
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">Pixel Chat</h3>
-                        <span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
-                    </div>
-                    <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6 line-clamp-3">
-                        Advanced conversational AI for deep technical discussions, logic validation, and rapid conceptualization.
-                    </p>
-                </div>
-                <!-- Card Footer -->
-                <div class="pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Writing</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
-                        Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
-                </div>
-            </div>
 
-            <!-- Card 2: Pixel Canvas -->
+            <!-- Card 1: Pixel Canvas -->
             <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="image" data-name="Pixel Canvas" data-description="Generative image creation with precise spatial design, dynamic aspect ratios, and reference composition.">
                 <!-- Status Badge -->
                 <div class="absolute top-4 right-4">
@@ -416,8 +384,8 @@
                 </div>
                 <div>
                     <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">brush</span>
+                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all overflow-hidden">
+                        <img src="canvas_logo.png" alt="Pixel Canvas Logo" class="w-full h-full object-contain p-2 rounded-2xl" />
                     </div>
                     <!-- Details -->
                     <div class="flex items-center gap-2 mb-2">
@@ -430,22 +398,22 @@
                 <!-- Card Footer -->
                 <div class="pt-4 border-t border-white/5 flex items-center justify-between">
                     <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Image</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
+                    <a href="https://canvas.pixelstudiox.in/" target="_blank" rel="noopener noreferrer" class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
                         Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Card 3: Pixel Code -->
+            <!-- Card 2: Pixel Code -->
             <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="coding" data-name="Pixel Code" data-description="AI pair programmer designed to refactor algorithms, debug runtime loops, and architect modular environments.">
                 <!-- Status Badge -->
                 <div class="absolute top-4 right-4">
-                    <span class="bg-secondary-container/20 text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-secondary/20">Beta</span>
+                    <span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20">Live</span>
                 </div>
                 <div>
                     <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">code</span>
+                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all overflow-hidden">
+                        <img src="code_logo.png" alt="Pixel Code Logo" class="w-full h-full object-contain p-2 rounded-2xl" />
                     </div>
                     <!-- Details -->
                     <div class="flex items-center gap-2 mb-2">
@@ -459,94 +427,38 @@
                 <!-- Card Footer -->
                 <div class="pt-4 border-t border-white/5 flex items-center justify-between">
                     <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Coding</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
+                    <a href="https://code.pixelstudiox.in/" target="_blank" rel="noopener noreferrer" class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
                         Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Card 4: Pixel Vision -->
-            <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="analysis" data-name="Pixel Vision" data-description="Extract structural annotations, handwritten layout details, and graphical parameters from charts.">
+            <!-- Card 3: Pixel LeadFlow -->
+            <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="business" data-name="Pixel LeadFlow" data-description="AI-powered lead generation, automated marketing outreach, and smart client analytics dashboard.">
                 <!-- Status Badge -->
                 <div class="absolute top-4 right-4">
                     <span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20">Live</span>
                 </div>
                 <div>
                     <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">visibility</span>
+                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all overflow-hidden">
+                        <img src="leadflow_logo.png" alt="Pixel LeadFlow Logo" class="w-full h-full object-contain p-2 rounded-2xl" />
                     </div>
                     <!-- Details -->
                     <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">Pixel Vision</h3>
-                    </div>
-                    <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6 line-clamp-3">
-                        Extract structural annotations, handwritten layout details, and graphical parameters from charts.
-                    </p>
-                </div>
-                <!-- Card Footer -->
-                <div class="pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Analysis</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
-                        Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Card 5: Pixel Analytics -->
-            <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="business" data-name="Pixel Analytics" data-description="Predictive modeling, cluster categorization, and automated metric visualizations for raw CSV datasets.">
-                <!-- Status Badge -->
-                <div class="absolute top-4 right-4">
-                    <span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20">Live</span>
-                </div>
-                <div>
-                    <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">insights</span>
-                    </div>
-                    <!-- Details -->
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">Pixel Analytics</h3>
+                        <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">Pixel LeadFlow</h3>
                         <span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
                     </div>
                     <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6 line-clamp-3">
-                        Predictive modeling, cluster categorization, and automated metric visualizations for raw CSV datasets.
+                        AI-powered lead generation, automated marketing outreach, and smart client analytics dashboard.
                     </p>
                 </div>
                 <!-- Card Footer -->
                 <div class="pt-4 border-t border-white/5 flex items-center justify-between">
                     <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Business</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
+                    <a href="https://leadflow.pixelstudiox.in/dashboard" target="_blank" rel="noopener noreferrer" class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
                         Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Card 6: Pixel Voice -->
-            <div class="glass-panel ai-card p-6 flex flex-col justify-between relative overflow-hidden group" data-category="audio" data-name="Pixel Voice" data-description="Ultra-realistic audio generation, multi-dialect synthesis, and premium text-to-speech voice cloning.">
-                <!-- Status Badge -->
-                <div class="absolute top-4 right-4">
-                    <span class="bg-secondary-container/20 text-secondary text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-secondary/20">Beta</span>
-                </div>
-                <div>
-                    <!-- Icon Container -->
-                    <div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                        <span class="material-symbols-outlined text-[28px] text-tertiary">mic</span>
-                    </div>
-                    <!-- Details -->
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">Pixel Voice</h3>
-                    </div>
-                    <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6 line-clamp-3">
-                        Ultra-realistic audio generation, multi-dialect synthesis, and premium text-to-speech voice cloning.
-                    </p>
-                </div>
-                <!-- Card Footer -->
-                <div class="pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-outline bg-white/5 px-2.5 py-1 rounded">Audio</span>
-                    <button class="open-tool-btn text-xs font-bold text-on-surface hover:text-primary flex items-center gap-1 transition-colors">
-                        Launch <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
 
