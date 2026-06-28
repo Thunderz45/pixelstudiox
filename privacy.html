@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Pixel Studio X - Privacy Policy</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    <!-- Tailwind CSS with Forms and Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "outline-variant": "#424753",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#009ebe",
+                        "surface-container-highest": "#353534",
+                        "outline": "#8c909f",
+                        "surface-dim": "#131313",
+                        "primary-fixed": "#d9e2ff",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-surface-variant": "#c2c6d6",
+                        "on-error": "#690005",
+                        "tertiary": "#3cd7ff",
+                        "secondary-container": "#4816cb",
+                        "on-primary-fixed": "#001a43",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#004398",
+                        "on-secondary-container": "#b9aaff",
+                        "on-tertiary-container": "#002e3a",
+                        "on-secondary-fixed": "#1c0062",
+                        "background": "#131313",
+                        "surface-container-low": "#1c1b1b",
+                        "primary": "#afc6ff",
+                        "on-tertiary-fixed": "#001f27",
+                        "primary-container": "#528dff",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#cabeff",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "primary-fixed-dim": "#afc6ff",
+                        "on-primary": "#002d6c",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "on-secondary": "#31009a",
+                        "secondary-fixed": "#e6deff",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary": "#003642",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#4816cb",
+                        "surface-tint": "#afc6ff",
+                        "on-background": "#e5e2e1",
+                        "on-primary-container": "#00275f",
+                        "inverse-primary": "#0059c6",
+                        "secondary-fixed-dim": "#cabeff",
+                        "error": "#ffb4ab",
+                        "surface": "#131313",
+                        "tertiary-fixed": "#b4ebff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gap-section": "120px",
+                        "container-max": "1440px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        title: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e2e1;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(18, 18, 18, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .glass-panel:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(22, 22, 22, 0.6);
+        }
+
+        .primary-gradient-text {
+            background: linear-gradient(135deg, #4F8CFF, #7C5CFF, #00D4FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: textShimmer 4s linear infinite;
+        }
+
+        @keyframes textShimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .primary-button {
+            background: linear-gradient(to right, #4F8CFF, #7C5CFF);
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .primary-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transform: skewX(-25deg);
+            transition: 0.75s;
+            opacity: 0;
+        }
+
+        .primary-button:hover::after {
+            opacity: 1;
+            left: 120%;
+        }
+
+        .primary-button:hover {
+            box-shadow: 0 0 25px rgba(79, 140, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .ghost-button {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #e5e2e1;
+            transition: all 0.3s ease;
+        }
+
+        .ghost-button:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 15px rgba(79, 140, 255, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(140px);
+            z-index: -2;
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed pt-24 min-h-screen flex flex-col justify-between">
+
+    <!-- Vanta Waves Background -->
+    <div id="vanta-background" class="fixed inset-0 w-full h-full pointer-events-none z-[-10]"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-500 glass-panel px-6 py-4 flex items-center gap-3 max-w-sm pointer-events-none">
+        <span class="material-symbols-outlined text-secondary" id="toast-icon">info</span>
+        <span class="text-sm text-on-surface font-medium" id="toast-message">Notification</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full z-50 bg-surface-container-lowest/40 backdrop-blur-xl border-b border-white/5">
+        <div class="flex justify-between items-center max-w-[1440px] mx-auto px-6 md:px-16 h-20">
+            <!-- Brand Logo -->
+            <a class="flex items-center gap-2 font-display text-2xl font-black tracking-tighter text-on-surface hover:opacity-90 transition-opacity" href="index.html">
+                <img src="logo.png" alt="Pixel Studio X Logo" class="h-8 w-8 rounded-full border border-white/10 object-cover" />
+                <span>Pixel Studio X</span>
+            </a>
+            
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-1 items-center">
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="index.html">
+                    Home
+                </a>
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="tools.html">
+                    AI Tools
+                </a>
+                <a class="text-primary bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="privacy.html">
+                    Privacy Policy
+                </a>
+            </div>
+            
+            <!-- Actions -->
+            <div class="flex items-center space-x-3">
+                <button aria-label="Toggle visual mode" id="mode-toggle" class="text-on-surface-variant hover:text-on-surface transition-colors p-2 rounded-full hover:bg-white/5">
+                    <span class="material-symbols-outlined text-[22px]">dark_mode</span>
+                </button>
+                
+                <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full font-semibold text-sm primary-button" href="tools.html">
+                    Get Started
+                </a>
+                
+                <!-- Burger Button (Mobile) -->
+                <button aria-label="Open menu" id="menu-btn" class="inline-flex md:hidden text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5 transition-colors">
+                    <span class="material-symbols-outlined text-[24px]">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+        <!-- Close trigger by clicking backdrop -->
+        <div class="absolute inset-0" id="mobile-menu-backdrop"></div>
+        <!-- Drawer content -->
+        <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-surface-dim border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out" id="mobile-menu-content">
+            <div class="space-y-8">
+                <!-- Drawer Header -->
+                <div class="flex justify-between items-center">
+                    <span class="font-bold tracking-tight text-lg flex items-center gap-1.5">
+                        <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
+                        Pixel Studio X
+                    </span>
+                    <button aria-label="Close menu" id="menu-close-btn" class="text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                
+                <!-- Drawer Links -->
+                <div class="flex flex-col gap-4 font-display">
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="index.html">
+                        <span class="material-symbols-outlined">home</span>
+                        Home
+                    </a>
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="tools.html">
+                        <span class="material-symbols-outlined">explore</span>
+                        AI Tools
+                    </a>
+                    <a class="text-primary bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="privacy.html">
+                        <span class="material-symbols-outlined text-primary">security</span>
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Drawer Footer -->
+            <div class="space-y-4">
+                <a class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-base primary-button" href="tools.html">
+                    Get Started Free
+                </a>
+                <p class="text-xs text-center text-outline">
+                    © 2026 Pixel Studio X. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <main class="flex-grow max-w-[1440px] mx-auto px-6 md:px-16 w-full py-12 relative">
+        <!-- Ambient Background Glows -->
+        <div class="glow-bg w-[500px] h-[500px] bg-primary/5 top-[-100px] left-[-150px]"></div>
+        <div class="glow-bg w-[600px] h-[600px] bg-secondary/5 bottom-[-200px] right-[-200px]"></div>
+
+        <!-- Header Section -->
+        <section class="text-center mb-12 flex flex-col items-center fade-up visible">
+            <h1 class="text-4xl md:text-6xl font-black text-on-surface mb-4 tracking-tight">Privacy Policy</h1>
+            <p class="text-sm font-bold uppercase tracking-wider text-primary">
+                Effective Date: June 28, 2026
+            </p>
+        </section>
+
+        <!-- Document Panel -->
+        <section class="max-w-4xl mx-auto glass-panel p-8 md:p-12 text-left space-y-10 fade-up visible">
+            <div>
+                <p class="text-base text-on-surface-variant font-light leading-relaxed">
+                    Welcome to <strong>Pixel Studio X</strong> ("we", "our", "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website <a href="https://pixelstudiox.in" class="text-primary hover:underline font-medium">https://pixelstudiox.in</a>.
+                </p>
+                <p class="text-base text-on-surface-variant font-light leading-relaxed mt-4">
+                    By accessing or using our website, you agree to the practices described in this Privacy Policy.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 1. Information We Collect -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">1.</span> Information We Collect
+                </h2>
+                
+                <div class="space-y-2">
+                    <h3 class="text-sm font-semibold text-on-surface uppercase tracking-wide">Information You Voluntarily Provide</h3>
+                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        We may collect personal information that you choose to provide, including:
+                    </p>
+                    <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
+                        <li>Name</li>
+                        <li>Email address</li>
+                        <li>Phone number</li>
+                        <li>Business information</li>
+                        <li>Messages submitted through our contact forms</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2 pt-2">
+                    <h3 class="text-sm font-semibold text-on-surface uppercase tracking-wide">Automatically Collected Information</h3>
+                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        When you visit our website, certain information may be collected automatically, including:
+                    </p>
+                    <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
+                        <li>IP address</li>
+                        <li>Browser type and version</li>
+                        <li>Device information</li>
+                        <li>Operating system</li>
+                        <li>Pages visited</li>
+                        <li>Date and time of your visit</li>
+                        <li>Referring website</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 2. How We Use Your Information -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">2.</span> How We Use Your Information
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We use the information we collect to:
+                </p>
+                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1.5">
+                    <li>Provide and improve our services</li>
+                    <li>Respond to inquiries and support requests</li>
+                    <li>Enhance website performance and user experience</li>
+                    <li>Monitor website security</li>
+                    <li>Analyze website traffic and usage</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 3. Cookies -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">3.</span> Cookies
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    Our website may use cookies and similar technologies to improve functionality and analyze visitor behavior.
+                </p>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    You can disable cookies through your browser settings; however, some features of the website may not function properly.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 4. Third-Party Services -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">4.</span> Third-Party Services
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We may use trusted third-party services for website hosting, analytics, communication, and other operational purposes. These third-party providers may process information according to their own privacy policies.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 5. Data Security -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">5.</span> Data Security
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We implement reasonable technical and organizational measures to protect your information against unauthorized access, misuse, disclosure, alteration, or destruction.
+                </p>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    While we strive to protect your information, no method of internet transmission or electronic storage is completely secure.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 6. Data Sharing -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">6.</span> Data Sharing
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We do <strong>not</strong> sell, rent, or trade your personal information.
+                </p>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We may disclose information only:
+                </p>
+                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
+                    <li>When required by applicable law</li>
+                    <li>To protect our legal rights</li>
+                    <li>To trusted service providers who assist in operating our website under appropriate confidentiality obligations</li>
+                </ul>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 7. External Links -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">7.</span> External Links
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those websites.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 8. Children's Privacy -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">8.</span> Children's Privacy
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 9. Your Rights -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">9.</span> Your Rights
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    Depending on your location and applicable laws, you may have the right to:
+                </p>
+                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
+                    <li>Request access to your personal information</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Contact us regarding privacy-related concerns</li>
+                </ul>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 10. Changes to This Privacy Policy -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">10.</span> Changes to This Privacy Policy
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    We may update this Privacy Policy from time to time. Any changes will be posted on this page along with an updated Effective Date.
+                </p>
+            </div>
+
+            <hr class="border-white/5">
+
+            <!-- 11. Contact Us -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
+                    <span class="text-primary font-mono">11.</span> Contact Us
+                </h2>
+                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                    If you have any questions regarding this Privacy Policy, please contact us.
+                </p>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5 space-y-2 mt-2">
+                    <p class="text-sm text-on-surface-variant">
+                        <strong>Website:</strong> <a href="https://pixelstudiox.in" class="text-primary hover:underline">https://pixelstudiox.in</a>
+                    </p>
+                    <p class="text-sm text-on-surface-variant">
+                        <strong>Email:</strong> <a href="mailto:support@pixelstudiox.in" class="text-primary hover:underline">support@pixelstudiox.in</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directory Info Footer -->
+        <section class="flex flex-col items-center justify-center py-16">
+            <a class="px-8 py-3 rounded-full font-semibold text-xs ghost-button flex items-center gap-2" href="index.html">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                Back to Home Page
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-16 bg-surface-container-lowest border-t border-white/5 relative z-10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+            <!-- Brand -->
+            <div class="flex items-center gap-2 font-display text-lg font-black tracking-tighter text-on-surface">
+                <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
+                <span>Pixel Studio X</span>
+            </div>
+            <!-- Links -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">About</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="privacy.html">Privacy Policy</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Terms of Service</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Contact</a>
+            </div>
+            <!-- Copyright -->
+            <div class="text-xs text-on-surface-variant font-light">
+                © 2026 Pixel Studio X. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Intersection Observer for scroll animations (fade-up class)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.05
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(element => {
+                observer.observe(element);
+            });
+
+            // Mobile Menu Burger Logic
+            const menuBtn = document.getElementById('menu-btn');
+            const menuCloseBtn = document.getElementById('menu-close-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+            const mobileMenuContent = document.getElementById('mobile-menu-content');
+
+            function openMobileMenu() {
+                mobileMenu.classList.remove('pointer-events-none', 'opacity-0');
+                mobileMenu.classList.add('opacity-100');
+                mobileMenuContent.classList.remove('translate-x-full');
+                mobileMenuContent.classList.add('translate-x-0');
+            }
+
+            function closeMobileMenu() {
+                mobileMenu.classList.add('pointer-events-none', 'opacity-0');
+                mobileMenu.classList.remove('opacity-100');
+                mobileMenuContent.classList.add('translate-x-full');
+                mobileMenuContent.classList.remove('translate-x-0');
+            }
+
+            menuBtn.addEventListener('click', openMobileMenu);
+            menuCloseBtn.addEventListener('click', closeMobileMenu);
+            mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+
+            // Toast Notifier Helper
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            const toastIcon = document.getElementById('toast-icon');
+
+            function showToast(message, icon = 'info') {
+                toastMessage.textContent = message;
+                toastIcon.textContent = icon;
+                toast.classList.remove('translate-y-24', 'opacity-0');
+                toast.classList.add('translate-y-0', 'opacity-100');
+                
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                    toast.classList.add('translate-y-24', 'opacity-0');
+                }, 3000);
+            }
+
+            // Mode Toggle (Ethereal interactive glow change)
+            const modeToggleBtn = document.getElementById('mode-toggle');
+            let isDim = false;
+            
+            modeToggleBtn.addEventListener('click', () => {
+                isDim = !isDim;
+                const body = document.body;
+                const icon = modeToggleBtn.querySelector('.material-symbols-outlined');
+                
+                if (isDim) {
+                    body.style.backgroundColor = '#020203';
+                    icon.textContent = 'light_mode';
+                    showToast('Ethereal Dim Mode Active', 'brightness_low');
+                } else {
+                    body.style.backgroundColor = '#050505';
+                    icon.textContent = 'dark_mode';
+                    showToast('True Dark Mode Active', 'dark_mode');
+                }
+            });
+        });
+    </script>
+
+    <!-- Vanta Waves Background Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            VANTA.WAVES({
+                el: "#vanta-background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x0,
+                waveHeight: 20.00,
+                shininess: 30.00,
+                waveSpeed: 0.70,
+                zoom: 0.85
+            });
+        });
+    </script>
+</body>
+</html>
