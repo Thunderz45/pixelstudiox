@@ -355,67 +355,29 @@
                 </div>
             </div>
 
-            <!-- Hero Visual (Glassmorphic Workspace Mockup) -->
-            <div class="flex-1 relative w-full h-[400px] md:h-[500px] flex items-center justify-center mt-8 lg:mt-0 z-10">
-                <div class="relative w-full max-w-lg glass-panel p-4 bg-surface-dim/80 border border-white/10 rounded-2xl shadow-2xl overflow-hidden aspect-[4/3] flex flex-col scale-[0.9] sm:scale-100 transition-transform">
-                    <!-- Mockup Header -->
-                    <div class="flex items-center justify-between border-b border-white/5 pb-3 mb-3">
-                        <div class="flex items-center gap-1.5">
-                            <span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-secondary/70"></span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-primary/70"></span>
-                            <span class="text-[10px] text-outline ml-2 font-mono">pixelstudiox.ai/chat</span>
+            <!-- Hero Visual (Glassmorphic Vertical Video Showcase - 9:16) -->
+            <div class="flex-1 relative w-full min-h-[550px] flex items-center justify-center mt-8 lg:mt-0 z-10">
+                <div class="relative w-full max-w-[290px] glass-panel p-3 bg-surface-dim/80 border border-white/10 rounded-[36px] shadow-2xl overflow-hidden aspect-[9/16] flex flex-col scale-[0.9] sm:scale-100 transition-transform">
+                    <!-- Phone Notch & Status Bar -->
+                    <div class="flex justify-between items-center px-3 pb-2 mb-2 border-b border-white/5">
+                        <span class="text-[9px] font-medium text-outline">9:41</span>
+                        <div class="w-16 h-4 bg-black/60 rounded-full border border-white/5 flex items-center justify-center">
+                            <div class="w-2.5 h-2.5 rounded-full bg-camera/80 border border-white/10 mr-1.5"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
                         </div>
-                        <div class="flex items-center gap-1 bg-white/5 px-2.5 py-1 rounded-lg border border-white/5">
-                            <span class="material-symbols-outlined text-[12px] text-primary">blur_on</span>
-                            <span class="text-[9px] text-on-surface font-semibold uppercase tracking-wider">Pixel Hub</span>
+                        <div class="flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[10px] text-outline">signal_cellular_alt</span>
+                            <span class="material-symbols-outlined text-[10px] text-outline">wifi</span>
+                            <span class="material-symbols-outlined text-[10px] text-outline">battery_full</span>
                         </div>
                     </div>
                     
-                    <!-- Mockup Body -->
-                    <div class="flex-grow flex gap-3 overflow-hidden text-left">
-                        <!-- Mockup Sidebar -->
-                        <div class="w-1/3 border-r border-white/5 pr-2 flex flex-col gap-1">
-                            <div class="px-2.5 py-1.5 rounded-lg bg-white/5 text-[10px] font-bold text-primary flex items-center gap-2">
-                                <span class="material-symbols-outlined text-xs text-primary">chat</span> Pixel Chat
-                            </div>
-                            <div class="px-2.5 py-1.5 rounded-lg hover:bg-white/5 text-[10px] font-medium text-outline flex items-center gap-2 transition-colors">
-                                <span class="material-symbols-outlined text-xs">brush</span> Pixel Canvas
-                            </div>
-                            <div class="px-2.5 py-1.5 rounded-lg hover:bg-white/5 text-[10px] font-medium text-outline flex items-center gap-2 transition-colors">
-                                <span class="material-symbols-outlined text-xs">code</span> Pixel Code
-                            </div>
-                            <div class="px-2.5 py-1.5 rounded-lg hover:bg-white/5 text-[10px] font-medium text-outline flex items-center gap-2 transition-colors">
-                                <span class="material-symbols-outlined text-xs">mic</span> Pixel Voice
-                            </div>
-                            <div class="mt-auto p-2 bg-white/5 rounded-xl border border-white/5 text-[9px] text-center text-outline font-mono">
-                                System Status: Online
-                            </div>
-                        </div>
-                        <!-- Mockup Content -->
-                        <div class="flex-grow flex flex-col justify-between pl-1">
-                            <!-- Simulated Chat Box -->
-                            <div class="space-y-3">
-                                <div class="flex items-start gap-2">
-                                    <div class="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center text-[10px] text-primary font-bold">U</div>
-                                    <div class="bg-white/5 px-3 py-2 rounded-xl rounded-tl-none text-[10px] font-light max-w-[85%] text-on-surface-variant leading-relaxed">
-                                        Write a clean, responsive layout code for our landing page.
-                                    </div>
-                                </div>
-                                <div class="flex items-start gap-2 justify-end">
-                                    <div class="bg-primary-container/10 border border-primary/20 px-3 py-2 rounded-xl rounded-tr-none text-[10px] font-light max-w-[85%] text-left leading-relaxed">
-                                        <span class="font-bold text-primary block text-[9px] mb-1">Pixel AI</span>
-                                        Sure! We'll use a 12-column grid container with CSS backdrop-filters for translucent glass elements.
-                                    </div>
-                                    <div class="w-5 h-5 rounded-full bg-primary/30 flex items-center justify-center text-[10px] text-primary font-bold">P</div>
-                                </div>
-                            </div>
-                            <!-- Input Area -->
-                            <div class="bg-white/5 border border-white/5 rounded-xl p-1.5 flex items-center justify-between">
-                                <span class="text-[9px] text-outline pl-2">Type a message or command...</span>
-                                <span class="material-symbols-outlined text-xs text-primary bg-primary/10 p-1.5 rounded-lg">send</span>
-                            </div>
-                        </div>
+                    <!-- Video Body (9:16 Showcase) -->
+                    <div class="flex-grow rounded-[24px] overflow-hidden relative bg-black/40 border border-white/5">
+                        <video class="w-full h-full object-cover rounded-[24px]" autoplay loop muted playsinline>
+                            <source src="logomotion.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
