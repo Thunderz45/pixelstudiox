@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>LeadFlow Agent - Privacy Policy</title>
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    
+    <link rel="icon" type="image/png" href="favicon.png" />
+
     <!-- Tailwind CSS with Forms and Container Queries -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Google Fonts & Material Symbols -->
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
     <!-- Custom Tailwind Configuration -->
     <script id="tailwind-config">
         tailwind.config = {
@@ -92,7 +95,7 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             background-color: #050505;
@@ -124,9 +127,17 @@
         }
 
         @keyframes textShimmer {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .primary-button {
@@ -136,7 +147,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .primary-button::after {
             content: '';
             position: absolute;
@@ -198,28 +209,36 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #050505;
         }
+
         ::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed pt-24 min-h-screen flex flex-col justify-between">
+
+<body
+    class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed pt-24 min-h-screen flex flex-col justify-between">
 
     <!-- Page Transition Overlay -->
-    <div id="page-transition" class="fixed inset-0 bg-[#050505] z-[9999] transition-opacity duration-300 ease-in-out pointer-events-auto opacity-100"></div>
+    <div id="page-transition"
+        class="fixed inset-0 bg-[#050505] z-[9999] transition-opacity duration-300 ease-in-out pointer-events-auto opacity-100">
+    </div>
 
     <!-- Vanta Waves Background -->
     <div id="vanta-background" class="fixed inset-0 w-full h-full pointer-events-none z-[-10]"></div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-500 glass-panel px-6 py-4 flex items-center gap-3 max-w-sm pointer-events-none">
+    <div id="toast"
+        class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-500 glass-panel px-6 py-4 flex items-center gap-3 max-w-sm pointer-events-none">
         <span class="material-symbols-outlined text-secondary" id="toast-icon">info</span>
         <span class="text-sm text-on-surface font-medium" id="toast-message">Notification</span>
     </div>
@@ -228,36 +247,44 @@
     <nav class="fixed top-0 w-full z-50 bg-surface-container-lowest/40 backdrop-blur-xl border-b border-white/5">
         <div class="flex justify-between items-center max-w-[1440px] mx-auto px-6 md:px-16 h-20">
             <!-- Brand Logo -->
-            <a class="flex items-center gap-2 font-display text-2xl font-black tracking-tighter text-on-surface hover:opacity-90 transition-opacity" href="/">
-                <img src="logo.png" alt="Pixel Studio X Logo" class="h-8 w-8 rounded-full border border-white/10 object-cover" />
+            <a class="flex items-center gap-2 font-display text-2xl font-black tracking-tighter text-on-surface hover:opacity-90 transition-opacity"
+                href="/">
+                <img src="logo.png" alt="Pixel Studio X Logo"
+                    class="h-8 w-8 rounded-full border border-white/10 object-cover" />
                 <span>Pixel Studio X</span>
             </a>
-            
+
             <!-- Navigation Links (Desktop) -->
             <div class="hidden md:flex space-x-1 items-center">
-                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/">
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all"
+                    href="/">
                     Home
                 </a>
-                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/tools">
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all"
+                    href="/tools">
                     AI Tools
                 </a>
-                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/privacy">
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all"
+                    href="/privacy">
                     Privacy Policy
                 </a>
             </div>
-            
+
             <!-- Actions -->
             <div class="flex items-center space-x-3">
-                <button aria-label="Toggle visual mode" id="mode-toggle" class="text-on-surface-variant hover:text-on-surface transition-colors p-2 rounded-full hover:bg-white/5">
+                <button aria-label="Toggle visual mode" id="mode-toggle"
+                    class="text-on-surface-variant hover:text-on-surface transition-colors p-2 rounded-full hover:bg-white/5">
                     <span class="material-symbols-outlined text-[22px]">dark_mode</span>
                 </button>
-                
-                <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full font-semibold text-sm primary-button" href="/tools">
+
+                <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full font-semibold text-sm primary-button"
+                    href="/tools">
                     Get Started
                 </a>
-                
+
                 <!-- Burger Button (Mobile) -->
-                <button aria-label="Open menu" id="menu-btn" class="inline-flex md:hidden text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5 transition-colors">
+                <button aria-label="Open menu" id="menu-btn"
+                    class="inline-flex md:hidden text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5 transition-colors">
                     <span class="material-symbols-outlined text-[24px]">menu</span>
                 </button>
             </div>
@@ -265,43 +292,51 @@
     </nav>
 
     <!-- Mobile Drawer Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+    <div id="mobile-menu"
+        class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
         <!-- Close trigger by clicking backdrop -->
         <div class="absolute inset-0" id="mobile-menu-backdrop"></div>
         <!-- Drawer content -->
-        <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-surface-dim border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out" id="mobile-menu-content">
+        <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-surface-dim border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out"
+            id="mobile-menu-content">
             <div class="space-y-8">
                 <!-- Drawer Header -->
                 <div class="flex justify-between items-center">
                     <span class="font-bold tracking-tight text-lg flex items-center gap-1.5">
-                        <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
+                        <img src="logo.png" alt="Pixel Studio X Logo"
+                            class="h-6 w-6 rounded-full border border-white/10 object-cover" />
                         Pixel Studio X
                     </span>
-                    <button aria-label="Close menu" id="menu-close-btn" class="text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5">
+                    <button aria-label="Close menu" id="menu-close-btn"
+                        class="text-on-surface-variant hover:text-on-surface p-2 rounded-full hover:bg-white/5">
                         <span class="material-symbols-outlined">close</span>
                     </button>
                 </div>
-                
+
                 <!-- Drawer Links -->
                 <div class="flex flex-col gap-4 font-display">
-                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/">
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors"
+                        href="/">
                         <span class="material-symbols-outlined">home</span>
                         Home
                     </a>
-                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/tools">
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors"
+                        href="/tools">
                         <span class="material-symbols-outlined">explore</span>
                         AI Tools
                     </a>
-                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/privacy">
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors"
+                        href="/privacy">
                         <span class="material-symbols-outlined">security</span>
                         Privacy Policy
                     </a>
                 </div>
             </div>
-            
+
             <!-- Drawer Footer -->
             <div class="space-y-4">
-                <a class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-base primary-button" href="/tools">
+                <a class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-base primary-button"
+                    href="/tools">
                     Get Started Free
                 </a>
                 <p class="text-xs text-center text-outline">
@@ -329,7 +364,9 @@
         <section class="max-w-4xl mx-auto glass-panel p-8 md:p-12 text-left space-y-10 fade-up visible">
             <div>
                 <p class="text-base text-on-surface-variant font-light leading-relaxed">
-                    LeadFlow Agent ("the Extension") is developed by <strong>Pixel Studio X</strong>. This Privacy Policy explains what information is collected, how it is used, and how it is protected when you use the Extension.
+                    LeadFlow Agent ("the Extension") is developed by <strong>Pixel Studio X</strong>. This Privacy
+                    Policy explains what information is collected, how it is used, and how it is protected when you use
+                    the Extension.
                 </p>
             </div>
 
@@ -340,14 +377,15 @@
                 <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
                     <span class="text-primary font-mono">1.</span> Information We Collect
                 </h2>
-                
+
                 <div class="space-y-2">
                     <p class="text-sm text-on-surface-variant font-light leading-relaxed">
                         The Extension may collect the following information only to provide its intended functionality:
                     </p>
                     <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
                         <li>User authentication information necessary to verify access to the LeadFlow platform.</li>
-                        <li>Business lead information extracted from supported websites after the user initiates the extraction process.</li>
+                        <li>Business lead information extracted from supported websites after the user initiates the
+                            extraction process.</li>
                         <li>User-selected project information required to organize collected leads.</li>
                         <li>Temporary extension preferences and settings necessary for operation.</li>
                     </ul>
@@ -395,7 +433,8 @@
                     <span class="text-primary font-mono">3.</span> Data Storage
                 </h2>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Lead information and user account data are securely stored on LeadFlow servers. Temporary operational settings may be stored locally only when necessary for extension functionality.
+                    Lead information and user account data are securely stored on LeadFlow servers. Temporary
+                    operational settings may be stored locally only when necessary for extension functionality.
                 </p>
             </div>
 
@@ -407,7 +446,8 @@
                     <span class="text-primary font-mono">4.</span> Cookies
                 </h2>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    The Extension may access authentication cookies solely to maintain a secure signed-in session with the LeadFlow platform. Cookies are never used for advertising or cross-site tracking.
+                    The Extension may access authentication cookies solely to maintain a secure signed-in session with
+                    the LeadFlow platform. Cookies are never used for advertising or cross-site tracking.
                 </p>
             </div>
 
@@ -422,7 +462,8 @@
                     We do not sell user data.
                 </p>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We do not share user data with third parties except when required to operate the LeadFlow service or when required by law.
+                    We do not share user data with third parties except when required to operate the LeadFlow service or
+                    when required by law.
                 </p>
             </div>
 
@@ -434,7 +475,8 @@
                     <span class="text-primary font-mono">6.</span> Security
                 </h2>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We use industry-standard security practices to protect transmitted and stored data. Communication between the Extension and LeadFlow servers is encrypted using HTTPS.
+                    We use industry-standard security practices to protect transmitted and stored data. Communication
+                    between the Extension and LeadFlow servers is encrypted using HTTPS.
                 </p>
             </div>
 
@@ -446,7 +488,8 @@
                     <span class="text-primary font-mono">7.</span> User Control
                 </h2>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Users may stop using the Extension at any time by uninstalling it. Users may also request deletion of their LeadFlow account and associated data through our support channels.
+                    Users may stop using the Extension at any time by uninstalling it. Users may also request deletion
+                    of their LeadFlow account and associated data through our support channels.
                 </p>
             </div>
 
@@ -458,7 +501,8 @@
                     <span class="text-primary font-mono">8.</span> Changes to This Policy
                 </h2>
                 <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated revision date.
+                    We may update this Privacy Policy from time to time. Any changes will be published on this page with
+                    an updated revision date.
                 </p>
             </div>
 
@@ -474,10 +518,12 @@
                 </p>
                 <div class="p-4 bg-white/5 rounded-2xl border border-white/5 space-y-2 mt-2">
                     <p class="text-sm text-on-surface-variant">
-                        <strong>Website:</strong> <a href="https://pixelstudiox.in" class="text-primary hover:underline">https://pixelstudiox.in</a>
+                        <strong>Website:</strong> <a href="https://pixelstudiox.in"
+                            class="text-primary hover:underline">https://pixelstudiox.in</a>
                     </p>
                     <p class="text-sm text-on-surface-variant">
-                        <strong>Email:</strong> <a href="mailto:support@pixelstudiox.in" class="text-primary hover:underline">support@pixelstudiox.in</a>
+                        <strong>Email:</strong> <a href="mailto:support@pixelstudiox.in"
+                            class="text-primary hover:underline">support@pixelstudiox.in</a>
                     </p>
                 </div>
             </div>
@@ -497,16 +543,24 @@
         <div class="max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
             <!-- Brand -->
             <div class="flex items-center gap-2 font-display text-lg font-black tracking-tighter text-on-surface">
-                <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
+                <img src="logo.png" alt="Pixel Studio X Logo"
+                    class="h-6 w-6 rounded-full border border-white/10 object-cover" />
                 <span>Pixel Studio X</span>
             </div>
             <!-- Links -->
             <div class="flex flex-wrap justify-center gap-6">
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">About</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/privacy">Privacy Policy</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/leadflow-privacy">LeadFlow Privacy</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Terms of Service</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Contact</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="#">About</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="/privacy">Privacy Policy</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="/leadflow-privacy">LeadFlow Privacy</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="/sitemap">Sitemap</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="#">Terms of Service</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium"
+                    href="#">Contact</a>
             </div>
             <!-- Copyright -->
             <div class="text-xs text-on-surface-variant font-light">
@@ -539,22 +593,22 @@
             // Intercept internal links for smooth fade-out navigation
             document.querySelectorAll('a').forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && 
-                    (href.startsWith('/') || href.startsWith('.') || !href.includes('://')) && 
-                    !link.getAttribute('target') && 
+                if (href &&
+                    (href.startsWith('/') || href.startsWith('.') || !href.includes('://')) &&
+                    !link.getAttribute('target') &&
                     !href.startsWith('#') &&
                     !href.startsWith('mailto:') &&
                     !href.startsWith('tel:')) {
-                    
+
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
-                        
+
                         // Local server support: append .html if running locally
                         let targetUrl = href;
-                        const isLocal = window.location.hostname === 'localhost' || 
-                                        window.location.hostname === '127.0.0.1' || 
-                                        window.location.protocol === 'file:';
-                        
+                        const isLocal = window.location.hostname === 'localhost' ||
+                            window.location.hostname === '127.0.0.1' ||
+                            window.location.protocol === 'file:';
+
                         if (isLocal) {
                             if (targetUrl === '/') {
                                 targetUrl = '/index.html';
@@ -564,6 +618,8 @@
                                 targetUrl = '/privacy.html';
                             } else if (targetUrl === '/leadflow-privacy') {
                                 targetUrl = '/leadflow-privacy.html';
+                            } else if (targetUrl === '/sitemap') {
+                                targetUrl = '/sitemap.html';
                             }
                         }
 
@@ -635,7 +691,7 @@
                 toastIcon.textContent = icon;
                 toast.classList.remove('translate-y-24', 'opacity-0');
                 toast.classList.add('translate-y-0', 'opacity-100');
-                
+
                 setTimeout(() => {
                     toast.classList.remove('translate-y-0', 'opacity-100');
                     toast.classList.add('translate-y-24', 'opacity-0');
@@ -645,12 +701,12 @@
             // Mode Toggle (Ethereal interactive glow change)
             const modeToggleBtn = document.getElementById('mode-toggle');
             let isDim = false;
-            
+
             modeToggleBtn.addEventListener('click', () => {
                 isDim = !isDim;
                 const body = document.body;
                 const icon = modeToggleBtn.querySelector('.material-symbols-outlined');
-                
+
                 if (isDim) {
                     body.style.backgroundColor = '#020203';
                     icon.textContent = 'light_mode';
@@ -687,4 +743,5 @@
         });
     </script>
 </body>
+
 </html>

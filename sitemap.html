@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Pixel Studio X - Home</title>
+    <title>Pixel Studio X - Sitemap</title>
+    <meta name="description" content="Explore the site structure and all available AI tools, platforms, legal documents, and machine-readable index maps of Pixel Studio X." />
     <link rel="icon" type="image/png" href="favicon.png"/>
-    <meta name="google-site-verification" content="EBmrgCgCAcdmY8A765uzuXjyF_OraM_B9Skue0Qlk-M" />
     
     <!-- Tailwind CSS with Forms and Container Queries -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -186,16 +186,6 @@
             transform: translateY(0);
         }
 
-        .floating-element {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-15px) rotate(1deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
-
         .glow-bg {
             position: absolute;
             border-radius: 50%;
@@ -246,7 +236,7 @@
             
             <!-- Navigation Links (Desktop) -->
             <div class="hidden md:flex space-x-1 items-center">
-                <a class="text-primary bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/">
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/">
                     Home
                 </a>
                 <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/tools">
@@ -295,8 +285,8 @@
                 
                 <!-- Drawer Links -->
                 <div class="flex flex-col gap-4 font-display">
-                    <a class="text-primary bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/">
-                        <span class="material-symbols-outlined text-primary">home</span>
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/">
+                        <span class="material-symbols-outlined">home</span>
                         Home
                     </a>
                     <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/tools">
@@ -328,209 +318,142 @@
         <div class="glow-bg w-[500px] h-[500px] bg-primary/8 top-[-100px] left-[-150px]"></div>
         <div class="glow-bg w-[700px] h-[700px] bg-secondary/5 bottom-[-200px] right-[-200px]"></div>
 
-        <!-- Hero Section -->
-        <section class="min-h-[80vh] flex flex-col lg:flex-row items-center justify-between gap-12 py-12 relative z-10 fade-up">
-            <div class="flex-1 space-y-8 max-w-2xl text-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-wider text-primary">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                    </span>
-                    Synthetic Elegance Release
-                </div>
-                
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] text-on-surface">
-                    One Platform.<br/>
-                    <span class="primary-gradient-text">Every AI You Need.</span>
-                </h1>
-                
-                <p class="text-base md:text-lg text-on-surface-variant font-light leading-relaxed max-w-lg">
-                    Experience the pinnacle of unified artificial intelligence. Pixel Studio X brings together the world's most powerful AI tools into a single, beautifully crafted glassmorphic ecosystem.
-                </p>
-                
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a class="px-8 py-4 rounded-full font-semibold text-sm primary-button flex items-center gap-2 group" href="/tools">
-                        Explore AI Tools
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                    <a class="px-8 py-4 rounded-full font-semibold text-sm ghost-button" href="#features">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-
-            <!-- Hero Visual (Glassmorphic Vertical Video Showcase - 9:16) -->
-            <div class="flex-1 relative w-full min-h-[550px] flex items-center justify-center mt-8 lg:mt-0 z-10">
-                <div class="relative w-full max-w-[290px] glass-panel p-3 bg-surface-dim/80 border border-white/10 rounded-[36px] shadow-2xl overflow-hidden aspect-[9/16] flex flex-col scale-[0.9] sm:scale-100 transition-transform">
-                    <!-- Phone Notch & Status Bar -->
-                    <div class="flex justify-between items-center px-3 pb-2 mb-2 border-b border-white/5">
-                        <span class="text-[9px] font-medium text-outline">9:41</span>
-                        <div class="w-16 h-4 bg-black/60 rounded-full border border-white/5 flex items-center justify-center">
-                            <div class="w-2.5 h-2.5 rounded-full bg-camera/80 border border-white/10 mr-1.5"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <span class="material-symbols-outlined text-[10px] text-outline">signal_cellular_alt</span>
-                            <span class="material-symbols-outlined text-[10px] text-outline">wifi</span>
-                            <span class="material-symbols-outlined text-[10px] text-outline">battery_full</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Video Body (9:16 Showcase) -->
-                    <div class="flex-grow rounded-[24px] overflow-hidden relative bg-black/40 border border-white/5">
-                        <video class="w-full h-full object-cover rounded-[24px]" autoplay loop muted playsinline>
-                            <source src="logomotion.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Divider Line -->
-        <hr class="border-white/5 my-12" id="features">
-
-        <!-- About Section -->
-        <section class="py-16 text-center max-w-3xl mx-auto fade-up">
-            <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 inline-block">Perfect Integration</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">Everything Connected.</h2>
+        <!-- Header Section -->
+        <section class="max-w-3xl mx-auto text-center py-12 relative z-10 fade-up">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">Navigation Index</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Website <span class="primary-gradient-text">Sitemap</span>
+            </h1>
             <p class="text-base md:text-lg text-on-surface-variant font-light leading-relaxed">
-                Gone are the days of fragmented workflows and juggling subscriptions. We've engineered a seamless, dark-minimalist environment where every AI model communicates flawlessly. Focus on creating; we handle the complexity.
+                Welcome to the complete overview of the Pixel Studio X digital ecosystem. Navigate through our core website pages, dedicated sub-platforms, legal documentation, and crawler assets.
             </p>
         </section>
 
-        <!-- Why Pixel Studio X (Bento Grid) -->
-        <section class="py-12 fade-up">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Bento Grid Sitemap Layout -->
+        <section class="py-12 fade-up relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Card 1: Unified Ecosystem (colspan-2) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-2 min-h-[220px]">
+                <!-- Card 1: Core Website Pages -->
+                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 min-h-[300px] border-t-2 border-t-primary/40">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors border border-primary/20">
-                            <span class="material-symbols-outlined text-primary">auto_awesome</span>
+                            <span class="material-symbols-outlined text-primary">domain</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-on-surface group-hover:text-primary transition-colors">Unified Ecosystem</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Access text generation, canvas design, audio translation, and coding intelligence under a single dashboard window. No context switching or duplicate billing pipelines.
+                        <h3 class="text-xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">Core Website Pages</h3>
+                        <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                            Main presentation layers of Pixel Studio X, showcasing our ecosystem features, metrics, and tools index catalog.
                         </p>
+                        <ul class="space-y-3 font-medium text-sm">
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="/">
+                                    <span class="material-symbols-outlined text-xs">arrow_forward_ios</span>
+                                    Home Page (/)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="/tools">
+                                    <span class="material-symbols-outlined text-xs">arrow_forward_ios</span>
+                                    AI Tools Catalog (/tools)
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <!-- Card 2: Lightning Fast (colspan-1) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-1 min-h-[220px]">
+                <!-- Card 2: AI Sub-Platforms -->
+                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 min-h-[300px] border-t-2 border-t-tertiary/40">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 group-hover:bg-tertiary/20 transition-colors border border-tertiary/20">
-                            <span class="material-symbols-outlined text-tertiary">bolt</span>
+                            <span class="material-symbols-outlined text-tertiary">rocket_launch</span>
                         </div>
-                        <h3 class="text-lg font-bold mb-2 text-on-surface group-hover:text-tertiary transition-colors">Lightning Inference</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Custom optimized model routing guarantees sub-second response times.
+                        <h3 class="text-xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors">AI Sub-Platforms</h3>
+                        <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                            External design studios, developer workspaces, and intelligent lead analytics dashboards.
                         </p>
+                        <ul class="space-y-3 font-medium text-sm">
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-tertiary transition-colors" href="https://canvas.pixelstudiox.in/" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    Canvas Engine
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-tertiary transition-colors" href="https://code.pixelstudiox.in/" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    Code Studio
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-tertiary transition-colors" href="https://leadflow.pixelstudiox.in/dashboard" target="_blank" rel="noopener noreferrer">
+                                    <span class="material-symbols-outlined text-xs">open_in_new</span>
+                                    LeadFlow Analytics
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <!-- Card 3: Beautiful Experience (colspan-1) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-1 min-h-[220px]">
+                <!-- Card 3: Legal & Compliance -->
+                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 min-h-[300px] border-t-2 border-t-secondary/40">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors border border-secondary/20">
-                            <span class="material-symbols-outlined text-secondary">design_services</span>
+                            <span class="material-symbols-outlined text-secondary">gavel</span>
                         </div>
-                        <h3 class="text-lg font-bold mb-2 text-on-surface group-hover:text-secondary transition-colors">Aesthetic Precision</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Quiet, high-fidelity glassmorphism designed to minimize cognitive fatigue.
+                        <h3 class="text-xl font-bold mb-4 text-on-surface group-hover:text-secondary transition-colors">Legal & Compliance</h3>
+                        <p class="text-sm text-on-surface-variant font-light leading-relaxed mb-6">
+                            Essential policies detailing user rights, cookies, dashboard data usage, and security guidelines.
                         </p>
+                        <ul class="space-y-3 font-medium text-sm">
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-secondary transition-colors" href="/privacy">
+                                    <span class="material-symbols-outlined text-xs">arrow_forward_ios</span>
+                                    Platform Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-secondary transition-colors" href="/leadflow-privacy">
+                                    <span class="material-symbols-outlined text-xs">arrow_forward_ios</span>
+                                    LeadFlow Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Card 4: Secure Access (colspan-1) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-1 min-h-[220px]">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-primary-container/10 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors border border-primary-container/20">
-                            <span class="material-symbols-outlined text-primary-fixed-dim">lock</span>
+                <!-- Card 4: Search Engine Indices (Full width or Col Span) -->
+                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 md:col-span-2 lg:col-span-3 min-h-[180px] border-l-2 border-l-primary-fixed-dim/40">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div class="max-w-2xl">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary-fixed-dim">search</span>
+                                <h3 class="text-lg font-bold text-on-surface">Search Crawler Feeds</h3>
+                            </div>
+                            <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                                Standard developer and search engine metadata configurations. Useful for crawling optimization, bot configurations, and index pipelines.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-bold mb-2 text-on-surface group-hover:text-primary-fixed-dim transition-colors">Secure Access</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Enterprise-grade encryption safeguards your input datasets.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 5: API Connected (colspan-1) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-1 min-h-[220px]">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 group-hover:bg-tertiary/20 transition-colors border border-tertiary/20">
-                            <span class="material-symbols-outlined text-tertiary">api</span>
+                        <div class="flex flex-wrap gap-4">
+                            <a class="px-6 py-3 rounded-full font-semibold text-xs ghost-button flex items-center gap-2" href="/sitemap.xml" target="_blank">
+                                <span class="material-symbols-outlined text-sm">xml_instructions</span>
+                                XML Sitemap Feed
+                            </a>
+                            <a class="px-6 py-3 rounded-full font-semibold text-xs ghost-button flex items-center gap-2" href="/robots.txt" target="_blank">
+                                <span class="material-symbols-outlined text-sm">robot_2</span>
+                                Robots Configuration
+                            </a>
                         </div>
-                        <h3 class="text-lg font-bold mb-2 text-on-surface group-hover:text-tertiary transition-colors">API Integration</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Connect your native scripts directly via our lightweight SDK libraries.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Card 6: Always Evolving (colspan-2) -->
-                <div class="glass-panel p-8 flex flex-col justify-between group hover:scale-[1.02] duration-300 lg:col-span-2 min-h-[220px]">
-                    <div>
-                        <div class="w-12 h-12 rounded-2xl bg-primary-container/10 flex items-center justify-center mb-6 group-hover:bg-primary-container/20 transition-colors border border-primary-container/20">
-                            <span class="material-symbols-outlined text-primary-fixed-dim">trending_up</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 text-on-surface group-hover:text-primary-fixed-dim transition-colors">Always Evolving</h3>
-                        <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                            Continuous model synchronization routes your calls directly to the latest state-of-the-art weights and API versions as soon as they release.
-                        </p>
                     </div>
                 </div>
                 
             </div>
         </section>
 
-        <!-- Stats Section -->
-        <section class="py-16 fade-up">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass-panel p-8 text-center border-t-2 border-t-primary/50 relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <p class="text-4xl md:text-5xl font-black text-on-surface mb-2 tracking-tight">25+</p>
-                    <p class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">AI Engines Integrated</p>
-                </div>
-                <div class="glass-panel p-8 text-center border-t-2 border-t-tertiary/50 relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-tertiary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <p class="text-4xl md:text-5xl font-black text-on-surface mb-2 tracking-tight">99.9%</p>
-                    <p class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Platform Uptime</p>
-                </div>
-                <div class="glass-panel p-8 text-center border-t-2 border-t-secondary/50 relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <p class="text-4xl md:text-5xl font-black text-on-surface mb-2 tracking-tight">1</p>
-                    <p class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Unified Dashboard</p>
-                </div>
-                <div class="glass-panel p-8 text-center border-t-2 border-t-primary-container/50 relative overflow-hidden group flex flex-col items-center justify-center min-h-[148px]">
-                    <div class="absolute inset-0 bg-primary-container/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span class="material-symbols-outlined text-4xl text-on-surface filled mb-2">cloud_done</span>
-                    <p class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Cloud Synchronized</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-16 fade-up">
-            <div class="glass-panel p-12 md:p-20 text-center relative overflow-hidden rounded-3xl border border-white/10">
-                <!-- Inner glow overlay -->
-                <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none"></div>
-                <div class="absolute -right-40 -top-40 w-96 h-96 rounded-full bg-secondary/10 blur-[100px] pointer-events-none"></div>
-                
-                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 relative z-10">Ready to Explore the Future?</h2>
-                <p class="text-base text-on-surface-variant max-w-md mx-auto mb-8 relative z-10 font-light">
-                    Join the digital pioneers building next-generation pipelines. Start your journey with Pixel Studio X today.
-                </p>
-                <div class="relative z-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a class="px-8 py-4 rounded-full font-semibold text-sm primary-button flex items-center justify-center gap-2" href="/tools">
-                        Get Started Free
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </a>
-                    <a class="px-8 py-4 rounded-full font-semibold text-sm ghost-button" href="/tools">
-                        Browse Catalog
-                    </a>
-                </div>
-            </div>
+        <!-- Directory Info Footer / Back home -->
+        <section class="flex flex-col items-center justify-center py-16">
+            <a class="px-8 py-3 rounded-full font-semibold text-xs ghost-button flex items-center gap-2" href="/">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                Back to Home Page
+            </a>
         </section>
     </main>
 
