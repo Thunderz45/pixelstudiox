@@ -212,6 +212,9 @@
 </head>
 <body class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed pt-24 min-h-screen flex flex-col justify-between">
 
+    <!-- Page Transition Overlay -->
+    <div id="page-transition" class="fixed inset-0 bg-[#050505] z-[9999] transition-opacity duration-300 ease-in-out pointer-events-auto opacity-100"></div>
+
     <!-- Vanta Waves Background -->
     <div id="vanta-background" class="fixed inset-0 w-full h-full pointer-events-none z-[-10]"></div>
 
@@ -550,6 +553,7 @@
             <div class="flex flex-wrap justify-center gap-6">
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">About</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/privacy">Privacy Policy</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/leadflow-privacy">LeadFlow Privacy</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Terms of Service</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Contact</a>
             </div>
@@ -563,6 +567,68 @@
     <!-- Interactive Navigation Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Page Transition Overlay Logic
+            const transitionOverlay = document.getElementById('page-transition');
+            if (transitionOverlay) {
+                // Fade out the overlay on page load
+                setTimeout(() => {
+                    transitionOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+                    transitionOverlay.classList.add('opacity-0', 'pointer-events-none');
+                }, 100);
+            }
+
+            // Handle back/forward cache (bfcache)
+            window.addEventListener('pageshow', (event) => {
+                if (transitionOverlay) {
+                    transitionOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+                    transitionOverlay.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            // Intercept internal links for smooth fade-out navigation
+            document.querySelectorAll('a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && 
+                    (href.startsWith('/') || href.startsWith('.') || !href.includes('://')) && 
+                    !link.getAttribute('target') && 
+                    !href.startsWith('#') &&
+                    !href.startsWith('mailto:') &&
+                    !href.startsWith('tel:')) {
+                    
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        
+                        // Local server support: append .html if running locally
+                        let targetUrl = href;
+                        const isLocal = window.location.hostname === 'localhost' || 
+                                        window.location.hostname === '127.0.0.1' || 
+                                        window.location.protocol === 'file:';
+                        
+                        if (isLocal) {
+                            if (targetUrl === '/') {
+                                targetUrl = '/index.html';
+                            } else if (targetUrl === '/tools') {
+                                targetUrl = '/tools.html';
+                            } else if (targetUrl === '/privacy') {
+                                targetUrl = '/privacy.html';
+                            } else if (targetUrl === '/leadflow-privacy') {
+                                targetUrl = '/leadflow-privacy.html';
+                            }
+                        }
+
+                        if (transitionOverlay) {
+                            transitionOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                            transitionOverlay.classList.add('opacity-100', 'pointer-events-auto');
+                            setTimeout(() => {
+                                window.location.href = targetUrl;
+                            }, 300);
+                        } else {
+                            window.location.href = targetUrl;
+                        }
+                    });
+                }
+            });
+
             // Intersection Observer for scroll animations (fade-up class)
             const observerOptions = {
                 root: null,
