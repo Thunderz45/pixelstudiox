@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Pixel Studio X - Privacy Policy</title>
+    <title>Pixel Studio X - Contact Us</title>
+    <meta name="description" content="Reach out to the team at Pixel Studio X. We are here to support your AI integration workflows and help resolve questions." />
     <link rel="icon" type="image/png" href="favicon.png"/>
     
     <!-- Tailwind CSS with Forms and Container Queries -->
@@ -210,7 +211,7 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed pt-24 min-h-screen flex flex-col justify-between">
+<body class="antialiased selection:bg-primary-container/30 selection:text-primary-fixed">
 
     <!-- Page Transition Overlay -->
     <div id="page-transition" class="fixed inset-0 bg-[#050505] z-[9999] transition-opacity duration-300 ease-in-out pointer-events-auto opacity-100"></div>
@@ -247,7 +248,7 @@
                 <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/about">
                     About
                 </a>
-                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/contact">
+                <a class="text-primary bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/contact">
                     Contact
                 </a>
             </div>
@@ -272,12 +273,9 @@
 
     <!-- Mobile Drawer Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
-        <!-- Close trigger by clicking backdrop -->
         <div class="absolute inset-0" id="mobile-menu-backdrop"></div>
-        <!-- Drawer content -->
         <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-surface-dim border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out" id="mobile-menu-content">
             <div class="space-y-8">
-                <!-- Drawer Header -->
                 <div class="flex justify-between items-center">
                     <span class="font-bold tracking-tight text-lg flex items-center gap-1.5">
                         <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
@@ -288,7 +286,6 @@
                     </button>
                 </div>
                 
-                <!-- Drawer Links -->
                 <div class="flex flex-col gap-4 font-display">
                     <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/">
                         <span class="material-symbols-outlined">home</span>
@@ -306,14 +303,13 @@
                         <span class="material-symbols-outlined">info</span>
                         About
                     </a>
-                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/contact">
-                        <span class="material-symbols-outlined">mail</span>
+                    <a class="text-primary bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/contact">
+                        <span class="material-symbols-outlined text-primary">mail</span>
                         Contact
                     </a>
                 </div>
             </div>
             
-            <!-- Drawer Footer -->
             <div class="space-y-4">
                 <a class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-base primary-button" href="/tools">
                     Get Started Free
@@ -325,245 +321,98 @@
         </div>
     </div>
 
-    <!-- Main Workspace -->
-    <main class="flex-grow max-w-[1440px] mx-auto px-6 md:px-16 w-full py-12 relative">
+    <!-- Main Content -->
+    <main class="pt-32 pb-24 px-6 md:px-16 max-w-[1440px] mx-auto relative overflow-hidden">
         <!-- Ambient Background Glows -->
-        <div class="glow-bg w-[500px] h-[500px] bg-primary/5 top-[-100px] left-[-150px]"></div>
-        <div class="glow-bg w-[600px] h-[600px] bg-secondary/5 bottom-[-200px] right-[-200px]"></div>
+        <div class="glow-bg w-[500px] h-[500px] bg-primary/8 top-[-100px] left-[-150px]"></div>
+        <div class="glow-bg w-[700px] h-[700px] bg-secondary/5 bottom-[-200px] right-[-200px]"></div>
 
-        <!-- Header Section -->
-        <section class="text-center mb-12 flex flex-col items-center fade-up visible">
-            <h1 class="text-4xl md:text-6xl font-black text-on-surface mb-4 tracking-tight">Privacy Policy</h1>
-            <p class="text-sm font-bold uppercase tracking-wider text-primary">
-                Effective Date: June 28, 2026
+        <section class="max-w-3xl mx-auto text-center py-12 relative z-10 fade-up">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">Direct Line</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Get in <span class="primary-gradient-text">Touch</span>
+            </h1>
+            <p class="text-base md:text-lg text-on-surface-variant font-light leading-relaxed">
+                Have questions about custom API routing, enterprise tiers, or visual pipeline configurations? Our support agents respond to inquiries within standard business cycles.
             </p>
         </section>
 
-        <!-- Document Panel -->
-        <section class="max-w-4xl mx-auto glass-panel p-8 md:p-12 text-left space-y-10 fade-up visible">
-            <div>
-                <p class="text-base text-on-surface-variant font-light leading-relaxed">
-                    Welcome to <strong>Pixel Studio X</strong> ("we", "our", "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website <a href="https://pixelstudiox.in" class="text-primary hover:underline font-medium">https://pixelstudiox.in</a>.
-                </p>
-                <p class="text-base text-on-surface-variant font-light leading-relaxed mt-4">
-                    By accessing or using our website, you agree to the practices described in this Privacy Policy.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 1. Information We Collect -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">1.</span> Information We Collect
-                </h2>
-                
-                <div class="space-y-2">
-                    <h3 class="text-sm font-semibold text-on-surface uppercase tracking-wide">Information You Voluntarily Provide</h3>
-                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                        We may collect personal information that you choose to provide, including:
+        <!-- Form and Cards Layout -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 py-12 relative z-10 fade-up">
+            
+            <!-- Contact Cards -->
+            <div class="space-y-6 lg:col-span-1">
+                <!-- Card 1 -->
+                <div class="glass-panel p-8 group hover:scale-[1.02] duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors border border-primary/20">
+                        <span class="material-symbols-outlined text-primary">support_agent</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-on-surface">Technical Support</h3>
+                    <p class="text-xs text-on-surface-variant font-light leading-relaxed mb-4">
+                        Troubleshooting issues with workspace extensions, credentials, or billing portals.
                     </p>
-                    <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
-                        <li>Name</li>
-                        <li>Email address</li>
-                        <li>Phone number</li>
-                        <li>Business information</li>
-                        <li>Messages submitted through our contact forms</li>
-                    </ul>
+                    <a href="mailto:support@pixelstudiox.in" class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                        support@pixelstudiox.in
+                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
                 </div>
 
-                <div class="space-y-2 pt-2">
-                    <h3 class="text-sm font-semibold text-on-surface uppercase tracking-wide">Automatically Collected Information</h3>
-                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                        When you visit our website, certain information may be collected automatically, including:
+                <!-- Card 2 -->
+                <div class="glass-panel p-8 group hover:scale-[1.02] duration-300">
+                    <div class="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors border border-secondary/20">
+                        <span class="material-symbols-outlined text-secondary">handshake</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-on-surface">Partnerships</h3>
+                    <p class="text-xs text-on-surface-variant font-light leading-relaxed mb-4">
+                        Integrating our dashboard widgets or reseller pipelines into your white-labeled nodes.
                     </p>
-                    <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
-                        <li>IP address</li>
-                        <li>Browser type and version</li>
-                        <li>Device information</li>
-                        <li>Operating system</li>
-                        <li>Pages visited</li>
-                        <li>Date and time of your visit</li>
-                        <li>Referring website</li>
-                    </ul>
+                    <a href="mailto:partners@pixelstudiox.in" class="text-xs font-semibold text-secondary hover:underline flex items-center gap-1">
+                        partners@pixelstudiox.in
+                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
                 </div>
             </div>
 
-            <hr class="border-white/5">
-
-            <!-- 2. How We Use Your Information -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">2.</span> How We Use Your Information
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We use the information we collect to:
-                </p>
-                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1.5">
-                    <li>Provide and improve our services</li>
-                    <li>Respond to inquiries and support requests</li>
-                    <li>Enhance website performance and user experience</li>
-                    <li>Monitor website security</li>
-                    <li>Analyze website traffic and usage</li>
-                    <li>Comply with legal obligations</li>
-                </ul>
+            <!-- Form Container -->
+            <div class="glass-panel p-8 md:p-12 lg:col-span-2">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Your Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Jane Doe" />
+                        </div>
+                        <div class="space-y-2">
+                            <label for="email" class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Email Address</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="jane@example.com" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="subject" class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Subject</label>
+                        <input type="text" id="subject" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Enterprise Dashboard Inquiry" />
+                    </div>
+                    <div class="space-y-2">
+                        <label for="message" class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Message Description</label>
+                        <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" placeholder="Let us know what you need..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="px-8 py-4 rounded-full font-semibold text-sm primary-button flex items-center justify-center gap-2 w-full sm:w-auto">
+                            Send Transmission
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <hr class="border-white/5">
-
-            <!-- 3. Cookies -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">3.</span> Cookies
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Our website may use cookies and similar technologies to improve functionality and analyze visitor behavior.
-                </p>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    You can disable cookies through your browser settings; however, some features of the website may not function properly.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 4. Third-Party Services -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">4.</span> Third-Party Services
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We may use trusted third-party services for website hosting, analytics, communication, and other operational purposes. These third-party providers may process information according to their own privacy policies.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 5. Data Security -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">5.</span> Data Security
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We implement reasonable technical and organizational measures to protect your information against unauthorized access, misuse, disclosure, alteration, or destruction.
-                </p>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    While we strive to protect your information, no method of internet transmission or electronic storage is completely secure.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 6. Data Sharing -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">6.</span> Data Sharing
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We do <strong>not</strong> sell, rent, or trade your personal information.
-                </p>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We may disclose information only:
-                </p>
-                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
-                    <li>When required by applicable law</li>
-                    <li>To protect our legal rights</li>
-                    <li>To trusted service providers who assist in operating our website under appropriate confidentiality obligations</li>
-                </ul>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 7. External Links -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">7.</span> External Links
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those websites.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 8. Children's Privacy -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">8.</span> Children's Privacy
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 9. Your Rights -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">9.</span> Your Rights
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    Depending on your location and applicable laws, you may have the right to:
-                </p>
-                <ul class="list-disc pl-6 text-sm text-on-surface-variant font-light space-y-1">
-                    <li>Request access to your personal information</li>
-                    <li>Request correction of inaccurate information</li>
-                    <li>Request deletion of your personal information</li>
-                    <li>Contact us regarding privacy-related concerns</li>
-                </ul>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 10. Changes to This Privacy Policy -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">10.</span> Changes to This Privacy Policy
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    We may update this Privacy Policy from time to time. Any changes will be posted on this page along with an updated Effective Date.
-                </p>
-            </div>
-
-            <hr class="border-white/5">
-
-            <!-- 11. Contact Us -->
-            <div class="space-y-4">
-                <h2 class="text-xl font-bold text-on-surface flex items-center gap-2">
-                    <span class="text-primary font-mono">11.</span> Contact Us
-                </h2>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed">
-                    If you have any questions regarding this Privacy Policy, please contact us.
-                </p>
-                <div class="p-4 bg-white/5 rounded-2xl border border-white/5 space-y-2 mt-2">
-                    <p class="text-sm text-on-surface-variant">
-                        <strong>Website:</strong> <a href="https://pixelstudiox.in" class="text-primary hover:underline">https://pixelstudiox.in</a>
-                    </p>
-                    <p class="text-sm text-on-surface-variant">
-                        <strong>Email:</strong> <a href="mailto:support@pixelstudiox.in" class="text-primary hover:underline">support@pixelstudiox.in</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Directory Info Footer -->
-        <section class="flex flex-col items-center justify-center py-16">
-            <a class="px-8 py-3 rounded-full font-semibold text-xs ghost-button flex items-center gap-2" href="/">
-                <span class="material-symbols-outlined text-sm">arrow_back</span>
-                Back to Home Page
-            </a>
+            
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="w-full py-16 bg-surface-container-lowest border-t border-white/5 relative z-10">
         <div class="max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
-            <!-- Brand -->
             <div class="flex items-center gap-2 font-display text-lg font-black tracking-tighter text-on-surface">
                 <img src="logo.png" alt="Pixel Studio X Logo" class="h-6 w-6 rounded-full border border-white/10 object-cover" />
                 <span>Pixel Studio X</span>
             </div>
-            <!-- Links -->
             <div class="flex flex-wrap justify-center gap-6">
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/about">About</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/privacy">Privacy Policy</a>
@@ -571,9 +420,7 @@
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/sitemap">Sitemap</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Terms of Service</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/contact">Contact</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/blog">Blog</a>
             </div>
-            <!-- Copyright -->
             <div class="text-xs text-on-surface-variant font-light">
                 © 2026 Pixel Studio X. All rights reserved.
             </div>
@@ -583,17 +430,14 @@
     <!-- Interactive Navigation Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Page Transition Overlay Logic
             const transitionOverlay = document.getElementById('page-transition');
             if (transitionOverlay) {
-                // Fade out the overlay on page load
                 setTimeout(() => {
                     transitionOverlay.classList.remove('opacity-100', 'pointer-events-auto');
                     transitionOverlay.classList.add('opacity-0', 'pointer-events-none');
                 }, 100);
             }
 
-            // Handle back/forward cache (bfcache)
             window.addEventListener('pageshow', (event) => {
                 if (transitionOverlay) {
                     transitionOverlay.classList.remove('opacity-100', 'pointer-events-auto');
@@ -601,7 +445,6 @@
                 }
             });
 
-            // Intercept internal links for smooth fade-out navigation
             document.querySelectorAll('a').forEach(link => {
                 const href = link.getAttribute('href');
                 if (href && 
@@ -613,8 +456,6 @@
                     
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
-                        
-                        // Local server support: append .html if running locally
                         let targetUrl = href;
                         const isLocal = window.location.hostname === 'localhost' || 
                                         window.location.hostname === '127.0.0.1' || 
@@ -653,7 +494,6 @@
                 }
             });
 
-            // Intersection Observer for scroll animations (fade-up class)
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
@@ -673,7 +513,7 @@
                 observer.observe(element);
             });
 
-            // Mobile Menu Burger Logic
+            // Mobile Menu
             const menuBtn = document.getElementById('menu-btn');
             const menuCloseBtn = document.getElementById('menu-close-btn');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -698,7 +538,7 @@
             menuCloseBtn.addEventListener('click', closeMobileMenu);
             mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
 
-            // Toast Notifier Helper
+            // Toast Notifier
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
             const toastIcon = document.getElementById('toast-icon');
@@ -715,7 +555,7 @@
                 }, 3000);
             }
 
-            // Mode Toggle (Ethereal interactive glow change)
+            // Mode Toggle
             const modeToggleBtn = document.getElementById('mode-toggle');
             let isDim = false;
             
@@ -733,6 +573,14 @@
                     icon.textContent = 'dark_mode';
                     showToast('True Dark Mode Active', 'dark_mode');
                 }
+            });
+
+            // Form Submit Interceptor
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                showToast('Transmission Dispatched successfully!', 'check_circle');
+                form.reset();
             });
         });
     </script>

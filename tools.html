@@ -276,8 +276,14 @@
                 <a class="text-primary bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/tools">
                     AI Tools
                 </a>
-                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/privacy">
-                    Privacy Policy
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/blog">
+                    Blog
+                </a>
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/about">
+                    About
+                </a>
+                <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-2 rounded-full font-medium text-sm transition-all" href="/contact">
+                    Contact
                 </a>
             </div>
             
@@ -327,9 +333,17 @@
                         <span class="material-symbols-outlined text-primary">explore</span>
                         AI Tools
                     </a>
-                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/privacy">
-                        <span class="material-symbols-outlined">security</span>
-                        Privacy Policy
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/blog">
+                        <span class="material-symbols-outlined">rss_feed</span>
+                        Blog
+                    </a>
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/about">
+                        <span class="material-symbols-outlined">info</span>
+                        About
+                    </a>
+                    <a class="text-on-surface-variant hover:text-on-surface hover:bg-white/5 px-4 py-3 rounded-xl font-semibold text-lg flex items-center gap-3 transition-colors" href="/contact">
+                        <span class="material-symbols-outlined">mail</span>
+                        Contact
                     </a>
                 </div>
             </div>
@@ -611,12 +625,13 @@
             </div>
             <!-- Links -->
             <div class="flex flex-wrap justify-center gap-6">
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">About</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/about">About</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/privacy">Privacy Policy</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/leadflow-privacy">LeadFlow Privacy</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/sitemap">Sitemap</a>
                 <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Terms of Service</a>
-                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="#">Contact</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/contact">Contact</a>
+                <a class="text-xs text-on-surface-variant hover:text-primary transition-colors font-medium" href="/blog">Blog</a>
             </div>
             <!-- Copyright -->
             <div class="text-xs text-on-surface-variant font-light">
@@ -676,6 +691,12 @@
                                 targetUrl = '/leadflow-privacy.html';
                             } else if (targetUrl === '/sitemap') {
                                 targetUrl = '/sitemap.html';
+                            } else if (targetUrl === '/about') {
+                                targetUrl = '/about.html';
+                            } else if (targetUrl === '/contact') {
+                                targetUrl = '/contact.html';
+                            } else if (targetUrl === '/blog') {
+                                targetUrl = '/blog.html';
                             }
                         }
 
